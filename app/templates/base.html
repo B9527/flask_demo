@@ -1,0 +1,16 @@
+{% extends 'bootstrap/base.html' %}
+{% block head %}
+    {{ super() }}
+    {% include ['includes/_header.html','includes/_meta.html'] %}
+{% endblock %}
+{% block navbar %}
+    {{ nav.top.render() }}
+{% endblock %}
+{% block content %}
+    <header>{% block header %}{% endblock %}</header>
+{% endblock %}
+{% block footer %}
+    <footer>
+        Copyright 2017 by <a href="ray.dotnetage.com">baiyang</a>
+    </footer>
+{% endblock %}
